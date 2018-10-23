@@ -1,5 +1,5 @@
 # TV Maze Scraper API                                                                                                                     
-This project consists of 2 parts that RESTful API and Scraper application. The project was developed by using C#, .NET Core, MongoDB, and several tools such as Microsoft Extensions and Polly for retry operations.
+This project consists of 2 parts that RESTful API and Scraper application. The project was developed by using C#, .NET Core, MongoDB, DDD and several tools such as Microsoft Extensions and Polly for retry operations.
 
 ## Infrastructure
 
