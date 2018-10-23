@@ -20,7 +20,7 @@ namespace TvMazeScraper.Application.Services
         public async Task StartAsync(CancellationToken cancellationToken)
         {
             var autoResetEvent = new AutoResetEvent(true);
-            timer = new Timer(scraperService.ScrapeAsync, autoResetEvent, 0, (long)TimeSpan.FromHours(12).TotalMilliseconds);
+            timer = new Timer(scraperService.ScrapeAsync, autoResetEvent, 0, (long)TimeSpan.FromHours(24).TotalMilliseconds);
         }
 
         public async Task StopAsync(CancellationToken cancellationToken)
