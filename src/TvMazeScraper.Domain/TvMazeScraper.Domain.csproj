@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TvMazeScraper.Domain.Anticorruption\TvMazeScraper.Domain.Anticorruption.csproj" />
+    <ProjectReference Include="..\TvMazeScraper.Infrastructure\TvMazeScraper.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

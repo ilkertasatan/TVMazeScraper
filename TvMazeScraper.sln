@@ -3,9 +3,60 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvMazeScraper.Domain", "src\TvMazeScraper.Domain\TvMazeScraper.Domain.csproj", "{2F68BA6A-AE79-4132-8C6F-9396DBDDEDE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvMazeScraper.Infrastructure", "src\TvMazeScraper.Infrastructure\TvMazeScraper.Infrastructure.csproj", "{CD1CDE96-80A7-4F44-8956-63903A024874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvMazeScraper.Api", "src\TvMazeScraper.Api\TvMazeScraper.Api.csproj", "{B89C89A9-41E2-4042-AA83-24CE8D6DC3EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{E9CCBA0A-138F-44C9-9CBA-F0E5E7B38AA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6AB86B13-C08A-415F-8228-08B7BC0CD427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TvMazeScraper", "src\TvMazeScraper\TvMazeScraper.csproj", "{3768E9A1-88AB-43C3-988A-AF31F1ACD9E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TvMazeScraper.Domain.Anticorruption", "src\TvMazeScraper.Domain.Anticorruption\TvMazeScraper.Domain.Anticorruption.csproj", "{02A5F8EB-91C4-45A9-8703-39C8154838B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scraper", "Scraper", "{B65BAEDC-DE9F-43A3-B6F4-74B5C03A82FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web API", "Web API", "{6730E30E-5F63-4A10-81C8-93A8C2B74180}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F68BA6A-AE79-4132-8C6F-9396DBDDEDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F68BA6A-AE79-4132-8C6F-9396DBDDEDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F68BA6A-AE79-4132-8C6F-9396DBDDEDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F68BA6A-AE79-4132-8C6F-9396DBDDEDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD1CDE96-80A7-4F44-8956-63903A024874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD1CDE96-80A7-4F44-8956-63903A024874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD1CDE96-80A7-4F44-8956-63903A024874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD1CDE96-80A7-4F44-8956-63903A024874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89C89A9-41E2-4042-AA83-24CE8D6DC3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89C89A9-41E2-4042-AA83-24CE8D6DC3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89C89A9-41E2-4042-AA83-24CE8D6DC3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89C89A9-41E2-4042-AA83-24CE8D6DC3EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3768E9A1-88AB-43C3-988A-AF31F1ACD9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3768E9A1-88AB-43C3-988A-AF31F1ACD9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3768E9A1-88AB-43C3-988A-AF31F1ACD9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3768E9A1-88AB-43C3-988A-AF31F1ACD9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A5F8EB-91C4-45A9-8703-39C8154838B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A5F8EB-91C4-45A9-8703-39C8154838B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A5F8EB-91C4-45A9-8703-39C8154838B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A5F8EB-91C4-45A9-8703-39C8154838B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F68BA6A-AE79-4132-8C6F-9396DBDDEDE1} = {E9CCBA0A-138F-44C9-9CBA-F0E5E7B38AA5}
+		{CD1CDE96-80A7-4F44-8956-63903A024874} = {6AB86B13-C08A-415F-8228-08B7BC0CD427}
+		{B89C89A9-41E2-4042-AA83-24CE8D6DC3EF} = {6730E30E-5F63-4A10-81C8-93A8C2B74180}
+		{3768E9A1-88AB-43C3-988A-AF31F1ACD9E3} = {B65BAEDC-DE9F-43A3-B6F4-74B5C03A82FB}
+		{02A5F8EB-91C4-45A9-8703-39C8154838B8} = {E9CCBA0A-138F-44C9-9CBA-F0E5E7B38AA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ACA5DB2-128A-4C24-AEA5-FA0E60D11236}
