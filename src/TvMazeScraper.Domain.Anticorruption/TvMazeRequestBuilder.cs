@@ -34,7 +34,7 @@ namespace TvMazeScraper.Domain.Anticorruption
         {
             return await Policy
                 .HandleResult<HttpResponseMessage>(r => r.StatusCode == (HttpStatusCode)HttpStatusCodeReachedRateLimit)
-                .WaitAndRetryAsync(3, i => TimeSpan.FromSeconds(45), (result, timeSpan, retryCount, context) =>
+                .WaitAndRetryAsync(3, i => TimeSpan.FromSeconds(30), (result, timeSpan, retryCount, context) =>
                 {
                     this.logger.LogWarning($"Request failed with {result.Result.StatusCode}. Waiting {timeSpan} before next retry. Retry attempt {retryCount}");
                 })
