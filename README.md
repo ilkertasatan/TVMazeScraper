@@ -8,7 +8,7 @@ This project consists of 2 parts that RESTful API and Scraper application. The p
 This is an API for exposing TV Shows data which scraped by the application.
 
 #### Scraper Application
-This is an application which runs periodically scraping TV Shows from TV Maze database. It runs every 12 hours. When it runs, it will be creating a database named "TvMazeScraper", collections named "Shows" and saving the data which scraped from TV Maze API.
+This is an application which runs periodically scraping TV Shows from TV Maze database. It runs every 24 hours. When it runs, it will be creating a database named "TvMazeScraper", collections named "Shows" and saving the data which scraped from TV Maze API.
 
 ## RESTful API Interfaces
 Swagger was added for this project and you can reach it for testing the API using http://localhost:5000/swagger/index.html address.
